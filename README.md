@@ -4,7 +4,7 @@ A function that clean up what displaced in the terminal. Like an eraser or refre
 
 ## readline function:
 * A function that take in as a string and a function as a paramenter. Print out the string, wait for user input, store in a parameter, and then run the given function
-* readline can be use with different feature, like **readline.prompt**, **readline.question**, **readline.answer**, etc... (like string and array has its own features)
+* readline can be use with different method, like **readline.prompt**, **readline.question**, **readline.answer**, etc... (like string and array has its own methods)
 
 ~~~
 // require 2 lines below to use readline function. 'readline' is a seperate file of code
