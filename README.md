@@ -45,10 +45,10 @@ object['add address'] = 'Midtown, Manhattan' //use this way when keyname has spa
 
 //2 change value of a property
 object.address = 'New jersey'
-Object.defineProperty(object, age, {value : "overwritten DYNAMICALLY"}) // this way to use in a function
+Object.defineProperty(object, address, {value : "overwritten DYNAMICALLY"}) // this way to use in a function
 
 //3 push value into an array inside an object
-object.other.push('brown eye', 'black hair')
+object.other.push('brown eye', 'black hair', 'short')
 
 
 
