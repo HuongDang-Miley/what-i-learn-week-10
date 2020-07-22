@@ -59,6 +59,6 @@ let check2 = object.name === undefined  //-> check2. = true/false
 let person3 = { firstName: 'IDK', age: 1000, }
 person3.lastName = person3.firstName
 delete person3.firstName
-person3; // -> person3 = { lastName: 'IDK', age: 1000, } 
+person3; // -> { lastName: 'IDK', age: 1000, } 
 
 
