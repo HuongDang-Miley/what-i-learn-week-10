@@ -50,5 +50,15 @@ Object.defineProperty(object, address, {value : "overwritten DYNAMICALLY"}) // t
 //3 push value into an array inside an object
 object.other.push('brown eye', 'black hair', 'short')
 
+//4 Check if there is a specific key in an object:
+let check1 = 'age' in object //-> check1 = true/ false
+let check2 = object.name === undefined  //-> check2. = true/false
+
+//5 Change key name 'firstName' to 'lastName' in an object:
+
+let person3 = { firstName: 'IDK', age: 1000, }
+person3.lastName = person3.firstName
+delete person3.firstName
+person3; // -> person3 = { lastName: 'IDK', age: 1000, } 
 
 
