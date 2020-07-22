@@ -32,7 +32,7 @@ syntax
 ~~~
 const object = {
 name: 'Huong'.  //-> name: property / key, 'Huong' is the value of that property / key
-age: 30
+age: 300
 alive: true
 other: ['asian', 'female']
 }
