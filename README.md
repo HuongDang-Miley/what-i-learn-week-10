@@ -25,3 +25,30 @@ sixtyMins(){
 console.log(`There're 60 minutes in an hour`)
 } 
 ~~~
+
+# Tuesday
+## object
+syntax
+~~~
+const object = {
+name: 'Huong'.  //-> name: property / key, 'Huong' is the value of that property / key
+age: 30
+alive: true
+other: ['asian', 'female']
+}
+~~~
+## object properties:
+~~~
+//1 add new property
+object.address = 'Manhattan'
+object['add address'] = 'Midtown, Manhattan' //use this way when keyname has space or is a number
+
+//2 change value of a property
+object.address = 'New jersey'
+Object.defineProperty(object, age, {value : "overwritten DYNAMICALLY"}) // this way to use in a function
+
+//3 push value into an array inside an object
+object.other.push('brown eye', 'black hair')
+
+
+
