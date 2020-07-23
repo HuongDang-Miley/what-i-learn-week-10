@@ -72,11 +72,23 @@ const makeDino = function (newName, newTime, newDiet, newExtinct = false) { //->
 }
 ~~~
 # Thursday
-## Slice()
+## slice()
 ’String’.slice(a,b)
 a: include in the new string
 b: does not included in new string
-
-
+~~~
 let cutText = 'hello'.slice(0, str.length-2) // equal  'hello'.slice(0, -2)
 cutText;
+~~~
+## endsWith()
+~~~
+let text = 'hello'
+let check = text.endsWith('lo') //-> true
+~~~
+
+## typeof variable === ‘boolean’ / ‘number’ / ‘string’
+Check the type of a variable
+~~~
+ if (typeof vegan !== 'boolean' )  {
+   throw Error(`vegan must be a true or false`)
+~~~
