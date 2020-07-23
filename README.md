@@ -61,4 +61,14 @@ person3.lastName = person3.firstName
 delete person3.firstName
 person3; // -> { lastName: 'IDK', age: 1000, } 
 
+//6 Can set a default value for paramenter when use a function for object
+const makeDino = function (newName, newTime, newDiet, newExtinct = false) { //-> extinct default tobe false
+    return {
+      species: newName,
+      period: newTime,
+      carnivore: newDiet,
+      extinct: newExtinct
+    }
+}
+
 
