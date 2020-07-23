@@ -92,3 +92,29 @@ Check the type of a variable
  if (typeof vegan !== 'boolean' )  {
    throw Error(`vegan must be a true or false`)
 ~~~
+## JSON
+Json is a type of file that ONLY contain string, number, boolean, array, object and null 
+String has to be wrap by "" because any language can use ""
+It can be imported to any kind of language like JS, Python, etc
+
+~~~
+{
+    "standFor": "JSON stands for JavaScript Object Notation",
+    "point": "have data stored in a complex but portable way",
+    "canHandle": "numbers, strings (always wrap by double quote), boolean, object, arrays, null",
+    "canNotHandle": "undefined; methods: function(), length(), etc..trailing comma , back tick , enter newline ",
+    "Portable": "to any kind of language"
+}
+
+{
+    "name": "Colin",
+    "age": 30,
+    "vegan": false
+    "friend": [
+        "Miley"
+        "Francis"
+        "Josh"
+    ]
+}
+
+~~~
