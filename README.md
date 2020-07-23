@@ -70,5 +70,13 @@ const makeDino = function (newName, newTime, newDiet, newExtinct = false) { //->
       extinct: newExtinct
     }
 }
+~~~
+# Thursday
+## Slice()
+’String’.slice(a,b)
+a: include in the new string
+b: does not included in new string
 
 
+let cutText = 'hello'.slice(0, str.length-2) // equal  'hello'.slice(0, -2)
+cutText;
