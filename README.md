@@ -131,10 +131,10 @@ const obj = JSON.parse(data)
 ~~~
 
 ## Update and Rewrite json file
-* Update: convert object json back to string using JSON.stringify(obj, null, 2)
-obj: variable name that we assign to convert json to object from the beginning
-null: idk
-2: number of space/tab we want to display in json (for easy reading)
+* Update: convert object json back to string using JSON.stringify(obj, null, 2) <br/>
+obj: variable name that we assign to convert json to object from the beginning<br/>
+null: idk<br/>
+2: number of space/tab we want to display in json (for easy reading)<br/>
 ~~~
  const saveFile = JSON.stringify(obj, null, 2)
  ~~~
