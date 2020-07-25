@@ -31,28 +31,41 @@ console.log(`There're 60 minutes in an hour`)
 syntax
 ~~~
 const object = {
-name: 'Huong'.  //-> name: property / key, 'Huong' is the value of that property / key
-age: 300
-alive: true
-other: ['asian', 'female']
+name: 'Huong',  
+age: 300,
+alive: true,
+other: ['asian', 'female'],
 }
 ~~~
+* name: property / key <br/>
+* 'Huong' is the value of that property / key<br/>
+* require ',' after everyline <br/>
+
 ## object properties:
+
+1. add new property
 ~~~
-//1 add new property
-object.address = 'Manhattan'
-object['add address'] = 'Midtown, Manhattan' //use this way when keyname has space or is a number
+object.address = 'Manhattan' //way1
+object['add address'] = 'Midtown, Manhattan' //way2
+~~~ 
+Use way2 way when keyname has space or is a number
 
-//2 change value of a property
+2. change value of a property
+~~~
 object.address = 'New jersey'
-Object.defineProperty(object, address, {value : "overwritten DYNAMICALLY"}) // this way to use in a function
+~~~
 
-//3 push value into an array inside an object
+3. push value into an array inside an object
+~~~
 object.other.push('brown eye', 'black hair', 'short')
+~~~
 
-//4 Check if there is a specific key in an object:
-let check1 = 'age' in object //-> check1 = true/ false
-let check2 = object.name === undefined  //-> check2. = true/false
+4. Check if there is a specific key in an object:
+~~~
+let check1 = 'age' in object //way 1 
+let check2 = object.name === undefined  //way2
+~~~
+both way1 and way2 will return either true or false
 
 //5 Change key name 'firstName' to 'lastName' in an object:
 
@@ -93,18 +106,25 @@ Check the type of a variable
    throw Error(`vegan must be a true or false`)
 ~~~
 ## JSON
-Json is a type of file that ONLY contain string, number, boolean, array, object and null 
-String has to be wrap by "" because any language can use ""
-It can be imported to any kind of language like JS, Python, etc
+* JSON stands for JavaScript Object Notation
+* It can be imported to any kind of language like JS, Python, etc..
+
+* **Must:** <br/>
+All content must be wrap in a {} <br/>
+ONLY contain string, number, boolean, array, object and null <br/>
+String has to be wrap by "" because any language can use "" <br/>
+NOT have trailing comma ',' <br/>
 
 ~~~
+
 {
-    "standFor": "JSON stands for JavaScript Object Notation",
+{
+    "standFor": "JavaScript Object Notation",
     "point": "have data stored in a complex but portable way",
     "canHandle": "numbers, strings (always wrap by double quote), boolean, object, arrays, null",
     "canNotHandle": "undefined; methods: function(), length(), etc..trailing comma , back tick , enter newline ",
     "Portable": "to any kind of language"
-}
+},
 
 {
     "name": "Colin",
@@ -116,29 +136,30 @@ It can be imported to any kind of language like JS, Python, etc
         "Josh"
     ]
 }
+}
 
 ~~~
 ## read and access to JSON file:
-* Read: import file use fs and readfilesync. Note json file is ALWAYS one level up of main.js (aka outside the current folder that contain main.js)
+* **Read:** import file use fs and readfilesync. Note json file is ALWAYS one level up of main.js (aka outside the current folder that contain main.js)
 ~~~
 const fs = require('fs')
 const data = fs.readFileSync('../data.json', 'utf8')
 ~~~
 
-* Access: convert to the string data to object using JSON.parse()
+* **Access:** convert to the string data to object using JSON.parse()
 ~~~
 const obj = JSON.parse(data)
 ~~~
 
 ## Update and Rewrite json file
-* Update: convert object json back to string using JSON.stringify(obj, null, 2) <br/>
-obj: variable name that we assign to convert json to object from the beginning<br/>
-null: idk<br/>
-2: number of space/tab we want to display in json (for easy reading)<br/>
+* **Update:** convert object json back to string using JSON.stringify(obj, null, 2) <br/>
+**obj:** variable name that we assign to convert json to object from the beginning<br/>
+**null:** idk<br/>
+**2:** number of space/tab we want to display in json (for easy reading)<br/>
 ~~~
  const saveFile = JSON.stringify(obj, null, 2)
  ~~~
-* Rewrite: use writeFileSync, pass in the path of json file and variable that we update above
+* **Rewrite:** use writeFileSync, pass in the path of json file and variable that we update above
 ~~~
  fs.writeFileSync('../students.json', saveFile)
 ~~~ 
