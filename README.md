@@ -9,7 +9,7 @@ A function that clean up what displaced in the terminal. Like an eraser or refre
 ~~~
 const readline = require('readline')
 const interface = readline.creatInterface({input: process.stdin, output: process.stout})
-
+~~~
 * pesuodo code of a readline function
 ~~~
 function readline.question(string, function) {
