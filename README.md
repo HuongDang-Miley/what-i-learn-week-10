@@ -2,7 +2,7 @@
 ## console.clear()
 A function that clean up what displaced in the terminal. Like an eraser or refresh.
 
-## readline function:
+## Readline Function:
 * A function that take in as a string and a function as a paramenter. Print out the string, wait for user input, store in a parameter, and then run the given function
 * readline can be use with different method, like **readline.prompt**, **readline.question**, **readline.answer**, etc... (like string and array has its own methods)
 * require 2 lines below to use readline function. 'readline' is a seperate file of code
@@ -27,7 +27,7 @@ console.log(`There're 60 minutes in an hour`)
 ~~~
 
 # Tuesday
-## object
+## Object
 syntax
 ~~~
 const object = {
@@ -41,7 +41,7 @@ other: ['asian', 'female'],
 * 'Huong' is the value of that property / key<br/>
 * require ',' after everyline <br/>
 
-## object properties:
+## Object properties:
 
 1. add new property
 ~~~
@@ -115,7 +115,7 @@ Check the type of a variable
 * **Must:** <br/>
 All content must be wrap in a {} <br/>
 ONLY contain string, number, boolean, array, object and null <br/>
-String has to be wrap by "" because any language can use "" <br/>
+STRING has to be wrap by "" because any language can use "" <br/>
 NOT have trailing comma ',' <br/>
 
 ~~~
@@ -142,7 +142,7 @@ NOT have trailing comma ',' <br/>
 }
 
 ~~~
-## read and access to JSON file:
+## Read and access to JSON file:
 * **Read:** import file use fs and readfilesync. Note json file is ALWAYS one level up of main.js (aka outside the current folder that contain main.js)
 ~~~
 const fs = require('fs')
@@ -154,7 +154,7 @@ const data = fs.readFileSync('../data.json', 'utf8')
 const obj = JSON.parse(data)
 ~~~
 
-## Update and Rewrite json file
+## Update and Rewrite JSON file
 * **Update:** convert object json back to string using JSON.stringify(obj, null, 2) <br/>
 **obj:** variable name that we assign to convert json to object from the beginning<br/>
 **null:** idk<br/>
